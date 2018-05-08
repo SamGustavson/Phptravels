@@ -15,14 +15,18 @@ public class PhptravelsSteps {
         homePage.searchFor("Toronto");
 
     }
+    @Test
     @Given("optional: Change the dates. (You can leave as default)")
     public void optionalChangethedates() throws Throwable {
         HomePage homePage = new HomePage();
+        homePage.setPeriodOfTimeEnd();
     }
-
+    @Test
     @Given("choose $3 Adults and $2 Childs")
     public void choose3Adultsand2Childs() throws Throwable {
         HomePage homePage = new HomePage();
+        homePage.choose3Adultsan();
+        homePage.choose2Childs();
     }
     @When("do the search")
     public void dothesearch() throws Throwable {

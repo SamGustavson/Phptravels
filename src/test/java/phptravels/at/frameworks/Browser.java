@@ -30,7 +30,7 @@ public class Browser {
 
 
     private static void init() {
-        ChromeDriverManager.getInstance().version("2.38").setup();
+        ChromeDriverManager.getInstance().version("2.36").setup();
 //        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+ "/chromedriver");
         //=================================================================
         ChromeOptions options = new ChromeOptions();
